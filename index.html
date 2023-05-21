@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
     <body>
     <!-- Header and navigation bar -->
@@ -21,20 +22,25 @@
     
     <body>  
         <div>
+            <style>
+                h1 {
+                    font-size: 50px;
+                    font-family: 'JetBrains Mono';
+                }
+            </style>
             <h1 id = "message"></h1>
             <script>
-            const message = ["Hey! I'm Haeohreum"] 
-            const speed = 100
-            let textPosition = 0;
-            function typewriter() {
-                document.querySelector("#message").innerHTML = message[0].substring(0, textPosition) + '<span>\u25AE</span>'
-                if (textPosition++ != message[0].length) {
-                    setTimeout(typewriter, speed)
+                const message = ["Hey! I'm Haeohreum"] 
+                const speed = 100
+                let textPosition = 0;
+                function typewriter() {
+                    document.querySelector("#message").innerHTML = message[0].substring(0, textPosition) + '<span>\u25AE</span>'
+                    if (textPosition++ != message[0].length) {
+                        setTimeout(typewriter, speed)
+                    }
                 }
-            }
 
-            window.addEventListener("load", typewriter)
-
+                window.addEventListener("load", typewriter)
             </script>
             <p>
                 <style>
@@ -43,7 +49,7 @@
                         font-family: "Computer Modern Bright";  
                     }
                 </style>
-                I'm a student at the University of New South Wales, currently studying a major in Economics and Computer Science
+                I'm a student at the University of New South Wales, currently studying a major in Economics and Computer Science.
             </p>
             <p>
                 <style>
@@ -51,6 +57,11 @@
                 </style>
                 I'm deeply passionate about statistics, financial markets and the way society interacts with computers in the modern age. 
             </p>
+            <style>
+                h2 {
+                    font-family: 'JetBrains Mono'
+                }
+            </style>
             <h2>Interests</h2>
             <p>
                 Particularly interested in how positive-EV scenarios can be generated in the financial markets.
@@ -68,6 +79,49 @@
                 </div>
                 <div class = "button">
                     <a href = "https://www.linkedin.com/in/haeohreum-kim-3a92bb240/" target = "_blank"><i class="fa fa-linkedin-square"></i> @Haeohreum Kim</a>
+                </div>
+            </div>
+            <h2>Projects and Works</h2>
+            <div class = "row">
+                <style>
+                    h3 {
+                        font-family: 'JetBrains Mono';
+                        font-size: 15px
+                    }
+                </style>
+                <div class = "column">
+                    <h3>Texas Holdem CLI (WIP)</h3>
+                    <p> 
+                        Texas Hold'em is a game I love playing. 
+                        I wanted to create a Python representation of Texas Holdem, so that
+                        I could play in the terminal with <em>dynamic</em> AI decisions.<br> <br>
+                        Some key features include: <br> 
+                        <em>Bluffing</em> <br> 
+                        <em>Dynamic decisions according to money</em> <br>
+                        <em>Working deck system</em>
+                        <br> <br>
+                        Check it out on GitHub! 
+                    </p> 
+                </div>
+                <div class = "column">
+                    <h3>2019-2023 Economic Research Paper (WIP)</h3>
+                    <p>
+                        This project is a personal project where I try to tackle an independent research of what
+                        occured economically during the COVID-19 Lockdown, and it's effects on the global economy.
+                        <br> <br>
+                        Key Goals: <br>
+                        <em>Establish clear axioms of the recession</em> <br>
+                        <em>Shorting opportunities</em> <br>
+                        <em>Using computer science to predict changes in the economy</em>
+                    </p>
+                </div>
+                <div class = "column">
+                    <h3>This Website :)</h3>
+                    <p>
+                        This website is a project I created to force myself to learn HTML, CSS and a bit of JavaScript. <br> <br>
+                        It's taught me a lot about front-end programming and UX design in a short amount of time, but I'm
+                        still a complete beginner, so this website will grow as I do!
+                    </p>
                 </div>
             </div>
             
