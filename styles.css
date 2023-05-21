@@ -111,3 +111,13 @@ body {
     font-weight: bold;
     font-style: italic, oblique;
   }
+
+  span{
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker{
+    50%{
+      opacity: 0;
+    }
+  }

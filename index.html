@@ -21,7 +21,21 @@
     
     <body>  
         <div>
-            <h1>Hey! I'm Haeohreum</h1>
+            <h1 id = "message"></h1>
+            <script>
+            const message = ["Hey! I'm Haeohreum"] 
+            const speed = 100
+            let textPosition = 0;
+            function typewriter() {
+                document.querySelector("#message").innerHTML = message[0].substring(0, textPosition) + '<span>\u25AE</span>'
+                if (textPosition++ != message[0].length) {
+                    setTimeout(typewriter, speed)
+                }
+            }
+
+            window.addEventListener("load", typewriter)
+
+            </script>
             <p>
                 <style>
                     p {
@@ -50,10 +64,10 @@
             <h2>Social Media</h2>
             <div class = "center">  
                 <div class = "button">
-                    <a href = "https://github.com/haezera"> <i class="fa fa-github"></i> @haezera</a>  
+                    <a href = "https://github.com/haezera" target = "_blank"> <i class="fa fa-github"></i> @haezera</a>  
                 </div>
                 <div class = "button">
-                    <a href = "https://www.linkedin.com/in/haeohreum-kim-3a92bb240/"><i class="fa fa-linkedin-square"></i> @Haeohreum Kim</a>
+                    <a href = "https://www.linkedin.com/in/haeohreum-kim-3a92bb240/" target = "_blank"><i class="fa fa-linkedin-square"></i> @Haeohreum Kim</a>
                 </div>
             </div>
             
