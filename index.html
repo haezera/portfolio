@@ -21,111 +21,122 @@
     </head>
     
     <body>  
-        <div>
-            <style>
-                h1 {
-                    font-size: 50px;
-                    font-family: 'JetBrains Mono';
-                }
-            </style>
-            <h1 id = "message"></h1>
-            <script>
-                const message = ["Hey! I'm Haeohreum"] 
-                const speed = 100
-                let textPosition = 0;
-                function typewriter() {
-                    document.querySelector("#message").innerHTML = message[0].substring(0, textPosition) + '<span>\u25AE</span>'
-                    if (textPosition++ != message[0].length) {
-                        setTimeout(typewriter, speed)
-                    }
-                }
-
-                window.addEventListener("load", typewriter)
-            </script>
-            <p>
+        <div class = "row">
+            <div class = "column">
                 <style>
-                    p {
-                        text-align: center;
-                        font-family: "Computer Modern Bright";  
-                    }
-                </style>
-                I'm a student at the University of New South Wales, currently studying a major in Economics and Computer Science.
-            </p>
-            <p>
-                <style>
-                    p {text-align: center}
-                </style>
-                I'm deeply passionate about statistics, financial markets and the way society interacts with computers in the modern age. 
-            </p>
-            <style>
-                h2 {
-                    font-family: 'JetBrains Mono'
-                }
-            </style>
-            <h2>Interests</h2>
-            <p>
-                Particularly interested in how positive-EV scenarios can be generated in the financial markets.
-            </p>
-            <p>
-                As well, neural networks and machine learning, as well as their connections to these markets are of great interest to me. 
-            </p>
-            <p>
-                I'm also incredibly interested in the mathematics of computer science and quantitative data science. 
-            </p>
-            <h2>Social Media</h2>
-            <div class = "center">  
-                <div class = "button">
-                    <a href = "https://github.com/haezera" target = "_blank"> <i class="fa fa-github"></i> @haezera</a>  
-                </div>
-                <div class = "button">
-                    <a href = "https://www.linkedin.com/in/haeohreum-kim-3a92bb240/" target = "_blank"><i class="fa fa-linkedin-square"></i> @Haeohreum Kim</a>
-                </div>
-            </div>
-            <h2>Projects and Works</h2>
-            <div class = "row">
-                <style>
-                    h3 {
+                    h1 {
+                        font-size: 35px;
                         font-family: 'JetBrains Mono';
-                        font-size: 15px
+                        text-align: left;
+                        margin-left: 150px;
+                        margin-top: 140px
                     }
                 </style>
-                <div class = "column">
-                    <h3>Texas Holdem CLI (WIP)</h3>
-                    <p> 
-                        Texas Hold'em is a game I love playing. 
-                        I wanted to create a Python representation of Texas Holdem, so that
-                        I could play in the terminal with <em>dynamic</em> AI decisions.<br> <br>
-                        Some key features include: <br> 
-                        <em>Bluffing</em> <br> 
-                        <em>Dynamic decisions according to money</em> <br>
-                        <em>Working deck system</em>
-                        <br> <br>
-                        Check it out on GitHub! 
-                    </p> 
-                </div>
-                <div class = "column">
-                    <h3>2019-2023 Economic Research Paper (WIP)</h3>
-                    <p>
-                        This project is a personal project where I try to tackle an independent research of what
-                        occured economically during the COVID-19 Lockdown, and it's effects on the global economy.
-                        <br> <br>
-                        Key Goals: <br>
-                        <em>Establish clear axioms of the recession</em> <br>
-                        <em>Shorting opportunities</em> <br>
-                        <em>Using computer science to predict changes in the economy</em>
-                    </p>
-                </div>
-                <div class = "column">
-                    <h3>This Website :)</h3>
-                    <p>
-                        This website is a project I created to force myself to learn HTML, CSS and a bit of JavaScript. <br> <br>
-                        It's taught me a lot about front-end programming and UX design in a short amount of time, but I'm
-                        still a complete beginner, so this website will grow as I do!
-                    </p>
-                </div>
-            </div>
+                <h1 id = "message"></h1>
+                <script>
+                    const message = ["Hey! I'm Haeohreum"] 
+                    const speed = 100
+                    let textPosition = 0;
+                    function typewriter() {
+                        document.querySelector("#message").innerHTML = message[0].substring(0, textPosition) + '<span>\u25AE</span>'
+                        if (textPosition++ != message[0].length) {
+                            setTimeout(typewriter, speed)
+                        }
+                    }
+
+                    window.addEventListener("load", typewriter)
+                </script>
+                <p>
+                    <style>
+                        p {
+                            text-align: left;
+                            font-family: "Computer Modern Bright";  
+                            margin-left: 150px;
+                        }
+                </style>
+                Computer Science and Economics Student @ UNSW Sydney
+                </p>
+                <p>
+                    <style>
+                    </style>
+                </p>
+                <style>
+                    h2 {
+                        font-family: 'JetBrains Mono'
+                    }
+                </style>
+                <div class = "left">  
+                    <div class = "button"z>
+                        <a href = "https://github.com/haezera" target = "_blank"> <i class="fa fa-github"></i> @haezera</a>  
+                    </div>
+                    <div class = "button">
+                        <a href = "https://www.linkedin.com/in/haeohreum-kim-3a92bb240/" target = "_blank"><i class="fa fa-linkedin-square"></i> @Haeohreum Kim</a>
+                    </div>
             
 
+            </div>
+        </div>
+        <div class = "column"> 
+            <style>
+            h2 {
+                font-size: 20px;
+                font-family: 'JetBrains Mono';
+                text-align: left;
+                margin-left: 150px;
+                margin-top: 150px
+            }
+
+            h3 {
+                font-size: 17px;
+                font-family: 'JetBrains Mono';
+                text-align: left;
+                margin-left: 150px;
+            }
+            </style>
+            <style>
+            hr {
+                text-align: left;
+                margin-left: 150px;
+                width: 95px
+            }
+            </style>
+            <h2> Projects </h2>
+            <hr>
+            <h3> Texas Holdem in the Command Line (WIP)</h3>
+            <p> This project was a passion project of mine which derived from my love of poker. <br>
+            My aim is to make a simple and fun interpretation of poker. <br> 
+            It was my first exposure to OOP and has taught me lots about Python.<br><br>
+            <em>Some key features include:</em> <br>
+            Dynamic AI (opponent) decisions <br>
+            Working deck system<br>
+            Object-oriented design <br> <br> <br>
+
+
+            <h3> 2019 -> 2023 Economic and Investment Research</h3> 
+            <p>
+                This project derives off of my Economics and Commerce major. <br>
+                It is a project which is currently in it's beginning stages, <br>
+                and will by the end of the research, have enacted a physical <br>
+                investment of my own money into my hypothesis and predictions. <br>
+                <br>
+
+                <em>Key aims:</em> <br>
+                Uncover the underlyings of the COVID-19 recession <br>
+                Find profit opportunities <br>
+                Use computer science theory to quantiatively analyse investments <br>
+                in recessions
+                <br><br><br>
+            
+            <h3>This website :)</h3>
+            <p>
+                This website was created to force me to learn HTML/CSS/JS. <br>
+                While I'm still such a beginner, it was really fun learning <br>
+                foundations of UX and how to make user-friendly designs. <br>
+                It has taught me a lot about front-end design in a short <br>
+                amount of time.
+            </p>
+
+            </p>          
         </div>
     </body>
 
