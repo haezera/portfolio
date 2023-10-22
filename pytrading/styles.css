@@ -253,6 +253,7 @@ span{
 }
 .dropdown-content a:hover {
   background-color: #eaeaea;
+  border-radius: 15px;
 }
 
 /* show dd content */
