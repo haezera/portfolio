@@ -1,0 +1,289 @@
+body {
+  background-image: linear-gradient(to right, rgb(30, 30, 30), rgb(30, 30, 30));
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+pre {
+  color: white;
+  font-family: Cascadia Code;
+  font-size: 15px;
+  text-align: left;
+}
+
+h1 {
+  color: white;
+  font-family: SF Pro Rounded;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: SF Pro Rounded;
+  font-size: 25px;
+  text-align: left; 
+  padding-left: 25%;   
+}
+h3 {
+  color: white;
+  font-family: SF Pro Rounded;
+  font-size: 25px;
+  text-align: center;    
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #cecece; /* Green */
+  color: rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.columnLeftRight {
+  float: left;
+  width: 25%;
+}
+
+.columnCenter {
+  float: left;
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul li {
+  list-style: disc !important;
+}
+
+
+
+/* Clear floats after the columns */
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+p {
+  font-family: SF Compact Text;
+  color: white;
+}
+
+.navbar {
+  align-self: center;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgb(30, 30, 30), rgb(30, 30, 30));
+}
+
+.fade-in-image {
+  -webkit-animation: fadeIn 5s;
+          animation: fadeIn 5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opaicty: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opaicty: 1; }
+}
+
+.navbar a {
+  align-self: center;
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button {
+  align-self: center;
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.button a {
+  align-self: center;
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none; 
+  border-radius: 5px;
+}
+
+.button a:hover {
+  background-color: #ddd;
+  color: black;   
+  border-radius: 5px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+span{
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
+/* CSS */
+.button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-12:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+/* dd container */
+.dropdown {
+  display:block;
+  position: relative;
+  outline: none;
+  margin: 10px;
+}
+
+/* button */
+.dropbtn {
+  padding: 8px 16px;
+  color: white;
+  background-color: #fd9a19;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.35s ease-out;
+}
+
+/* dd content */
+.dropdown .dropdown-content {
+  position: absolute;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  top: 2%;
+  min-width: 120%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+  transition: 0.35s ease-out;
+}
+.dropdown-content a:hover {
+  background-color: #eaeaea;
+}
+
+/* show dd content */
+.dropdown:focus .dropdown-content {
+  outline: none;
+  transform: translateY(20px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropbtn:hover, .dropdown:focus .dropbtn {
+  background-color: #691692;
+}
+
+/* mask to close menu by clicking on the button */
+.dropdown .db2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+.dropdown:focus .db2 {
+  display: inline-block;
+}
+.dropdown .db2:focus .dropdown-content {
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}

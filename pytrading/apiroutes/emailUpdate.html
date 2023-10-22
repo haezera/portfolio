@@ -1,0 +1,80 @@
+<!DOCUMENT html>
+<!DOCUMENT html>
+
+<html>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles.css">
+    <head> 
+        <div class="left">
+            <h2>API Documentation</h2>
+        </div>
+    </head>
+    <body>
+        <div class = "row">
+            <div class = "columnLeftRight">
+                <div class = "navbar">
+                    <a href="../index.html">Home</a> 
+                </div>
+                <div class = "navbar">
+                    <a href="../functions.html">Functions</a> 
+                </div>
+                <div class = "navbar">
+                    <a href="../issues.html">Issues</a>
+                </div>
+                <div class = "navbar">
+                    <a href="../about.html">Dependencies</a>
+                </div>
+                <div class = "navbar">
+                    <a href="https://pypi.org/project/yfinance/" target="_blank">yfinance</a>
+                </div>
+            </div>
+            <div class = "columnCenter">
+        	<div class = "dropdown" tabindex="1">
+                <i class="db2" tabindex="1"></i>
+                <a class="dropbtn">Routes</a>
+                <div class="dropdown-content">
+                    <a href="root.html">GET /</a>
+                    <a href="register.html">POST /user/register</a>
+                    <a href="login.html">PUT /user/login</a>
+                    <a href="pwUpdate.html">PUT /user/{userId}/pw/update</a>
+                    <a href="emailUpdate.html">PUT /user/{userId}/email/update</a>
+                    <a href="incomestmt.html">GET /stock/{ticker}/incomestmt</a>
+                    <a href="balancesheet.html">GET /stock/{ticker}/balancesheet</a>
+                    <a href="cashflow.html">GET /stock/{ticker}/cashflow</a>
+                    <a href="historical.html">GET /stock/{ticker}/historical</a>
+                    <a href="sma.html">GET /stock/{ticker}/sma</a>
+                    <a href="awsm.html">GET /stock/{ticker}/awsm</a>
+                    <a href="vwap.html">GET /stock/{ticker}/vwap</a>
+                    <a href="backtestSma.html">GET /stock/backtester/{ticker}/sma</a>
+                    <a href="backtestAwsm.html">GET /stock/backtester/{ticker}/awsm</a>
+                    <a href="backtestVwap.html">GET /stock/backtester/{ticker}/vwap</a>
+                </div>
+                <pre>Route: PUT /user/{userId}/email/update</pre>
+                <pre>
+Input: 
+{
+    newEmail: string 
+    password: string 
+}
+                    
+Output: 
+{
+    response: "Email has successfully been changed."
+}
+                </pre>
+                <p>
+                    Attempts to change user's email at request. 
+                    If the new email is not valid, or the password is incorrect,
+                    it will return a 400 error.
+                    If the userId does not exist within the database, 401 will be returned.
+                    If the userId does not conform with UUID, 403 will be returned. 
+                </p>
+            </div>
+
+            </div>
+            <div class = "columnLeftRight">
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
