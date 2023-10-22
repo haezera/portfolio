@@ -48,25 +48,23 @@
                     <a href="backtestAwsm.html">GET /stock/backtester/{ticker}/awsm</a>
                     <a href="backtestVwap.html">GET /stock/backtester/{ticker}/vwap</a>
                 </div>
-                <pre>Route: POST /user/register</pre>
+                <pre>Route: GET /stock/backtester/{ticker}/vwap </pre>
                 <pre>
 Input: 
-{
-    firstName: string 
-    lastName: string 
-    userName: string 
-    password: string
-}        
+parameters: 
+    startDate: string (YYYY/MM/DD)
+    endDate: string (YYYY/MM/DD) 
 
 Output:
 {
-    userId: string
+    results: pandas.DataFrame.to_json()
 }
                 </pre>
                 <p>
-                    The /user/register route creates a new user on the database,
-                    and then returns a userId, such that it can be maintained
-                    within a session.
+                    Returns profit and loss data regarding the historical VWAP calls between
+                    the start and end date. 
+                    If ticker raises an exception when passing through yahoo finance API, then
+                    return status code 400. 
                 </p>
             </div>
 
