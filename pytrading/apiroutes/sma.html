@@ -48,7 +48,7 @@
                     <a href="backtestAwsm.html">GET /stock/backtester/{ticker}/awsm</a>
                     <a href="backtestVwap.html">GET /stock/backtester/{ticker}/vwap</a>
                 </div>
-                <pre>Route: GET /stock/{ticker}/awsm </pre>
+		<pre>Route: GET /stock/{sessionId}/{ticker}/awsm </pre>
                 <pre>
 Input: 
 parameters: 
@@ -64,6 +64,7 @@ Output:
                     Returns historical SMA calls from start date to end date. 
                     If ticker raises an exception when passing through yahoo finance API, then
                     return status code 400. 
+		    Returns a 400 if session does not exist.
                 </p>
             </div>
 

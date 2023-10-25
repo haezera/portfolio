@@ -48,7 +48,7 @@
                     <a href="backtestAwsm.html">GET /stock/backtester/{ticker}/awsm</a>
                     <a href="backtestVwap.html">GET /stock/backtester/{ticker}/vwap</a>
                 </div>
-                <pre>Route: GET /stock/{ticker}/incomestmt</pre>
+		<pre>Route: GET /stock/{sessionId}/{ticker}/incomestmt</pre>
                 <pre>
 Output:
 {
@@ -58,6 +58,7 @@ Output:
                 <p>
                     Returns an income statement of the specified ticker.
                     Returns 400 if ticker raises an exception when passed into the yahoo finance API. 
+		    Returns 400 if sessionId doesn't exist.
                 </p>
             </div>
 

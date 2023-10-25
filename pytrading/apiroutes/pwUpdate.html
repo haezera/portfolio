@@ -48,11 +48,10 @@
                     <a href="backtestAwsm.html">GET /stock/backtester/{ticker}/awsm</a>
                     <a href="backtestVwap.html">GET /stock/backtester/{ticker}/vwap</a>
                 </div>
-                <pre>Route: PUT /user/{userId}/pw/update</pre>
+                <pre>Route: PUT /user/{sessionId}/pw/update</pre>
                 <pre>
 Input: 
 {
-    userName: string 
     oldPassword: string
     newPassword: string
 }        
@@ -66,8 +65,8 @@ Output:
                     The route attempts to update the password of a user. 
                     If the oldPassword is incorrect, or the userName is incorrect for the 
                     userId, then a status code 400 will be returned. <br>
-                    If the userId does not exist within the database, then a 401 will be returned. <br>
-                    If the userId does not conform with UUID standards, then a 403 will be returned. 
+                    If the sessionId does not exist within the database, then a 401 will be returned. <br>
+                    If the sessionId does not conform with UUID standards, then a 403 will be returned. 
                 </p>
             </div>
 
